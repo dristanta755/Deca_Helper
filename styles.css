@@ -39,12 +39,12 @@ body {
 }
 
 nav.sidebar {
-    width: 250px;
+    width: 120px;
     height: 100vh;
     background: var(--deca-blue);
     display: flex;
     flex-direction: column;
-    padding: 20px; 
+    padding: 20px 0; 
     position: sticky;
     top: 0;
     flex-shrink: 0;
@@ -87,9 +87,9 @@ nav ul li a {
     transition: var(--transition);
 }
 
-nav.icon {
-    width: 60px;
-    height: 60px;
+nav .icon {
+    width: 90px;
+    height: 90px;
     background-color: rgba(255,255,255, 0.10);
     border: 2px dashed var(--deca-gold);
     border-radius: var(--radius-sm);
@@ -97,10 +97,11 @@ nav.icon {
 }
 
 nav .icon svg {
-    width: 60%;
-    height: 60%;
+    width: 50px;
+    height: 50px;
     margin: 20%;
     stroke: var(--deca-gold);
+    stroke-width: 1.5;
     transition: 0.3s;
 }
 
@@ -109,7 +110,6 @@ nav ul li a:hover icon svg {
 }
 
 nav ul li a:hover .icon {
-    background-color: var(--deca-gold);
     border-color: var(--deca-white);
     color: var(--deca-blue);
 }
@@ -118,13 +118,13 @@ nav .label {
     position: absolute;
     left: 90px;
     top: 50%;
-    transform: trnslateY(-50%) translateX(-10px);
+    transform: translateY(-50%) translateX(-10px);
     background-color: var(--deca-gold);
     color: var(--deca-blue);
-    padding: 10px 20px;
+    padding: 12px 24px;
     border-radius: var(--radius-sm);
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
-    font-size: 1.5rem;
+    box-shadow: 6px 6px 15px rgba(0,0,0,0.2);
+    font-size: 1.6rem;
     font-weight: bold;
     font-family: var(--font-heading);
     white-space: nowrap;
@@ -162,3 +162,8 @@ h2, h3 {
     color: var(--deca-blue);
 }
 
+#top {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}

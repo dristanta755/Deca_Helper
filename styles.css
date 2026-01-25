@@ -49,6 +49,10 @@ nav.sidebar {
     top: 0;
     flex-shrink: 0;
     z-index: 1000;
+    transition: width 0.3s ease;
+}
+nav.sidebar:hover{
+    width: 250px;
 }
 
 nav .logo {
@@ -60,6 +64,10 @@ nav .logo {
 
 nav .logo img {
     max-width: 60px;
+}
+
+nav.logo img:hover {
+    transform: scale (11);
 }
 
 nav ul.nav-links {
@@ -105,8 +113,8 @@ nav .icon svg {
     transition: 0.3s;
 }
 
-nav ul li a:hover icon svg {
-    stroke: var(--deca-blue);
+nav ul li a:hover .icon svg {
+    stroke: var(--deca-white);
 }
 
 nav ul li a:hover .icon {
@@ -116,7 +124,7 @@ nav ul li a:hover .icon {
 
 nav .label {
     position: absolute;
-    left: 90px;
+    left: 160px;
     top: 50%;
     transform: translateY(-50%) translateX(-10px);
     background-color: var(--deca-gold);
@@ -151,10 +159,14 @@ nav ul li a:hover .label {
     transform: translateY(-50%) translateX(10px);
 }
 
+a, svg, button {
+    transition: all 0.2s ease;
+}
+
 header {
-    flex-grow: 1;
-    padding: 40px;
-    background: var(--deca-white);
+    margin: 20px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
 }
 
 h2, h3 {
@@ -163,7 +175,12 @@ h2, h3 {
 }
 
 #top {
-    margin: 0;
-    padding: 0;
-    font-size: 25px;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: var(--deca-gray);
+    max-width: 600px;
+    font-size: 1.2rem
 }

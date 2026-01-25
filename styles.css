@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz, wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --deca-blue: #002f6c;
@@ -30,14 +31,130 @@
 }
 
 body {
+    display: flex;
+    min-height: 100vh;
     font-family: var(--font-body);
     background-color: var(--deca-light-gray);
     color: var(--deca-black);
 }
 
-header {
+nav.sidebar {
+    width: 250px;
+    height: 100vh;
     background: var(--deca-blue);
+    display: flex;
+    flex-direction: column;
+    padding: 20px; 
+    position: sticky;
+    top: 0;
+    flex-shrink: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav .logo img {
+    max-width: 60px;
+}
+
+nav ul.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+nav ul li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
     color: var(--deca-white);
+    transition: var(--transition);
+}
+
+nav.icon {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255,255,255, 0.10);
+    border: 2px dashed var(--deca-gold);
+    border-radius: var(--radius-sm);
+    flex-shrink: 0;
+}
+
+nav .icon svg {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    stroke: var(--deca-gold);
+    transition: 0.3s;
+}
+
+nav ul li a:hover icon svg {
+    stroke: var(--deca-blue);
+}
+
+nav ul li a:hover .icon {
+    background-color: var(--deca-gold);
+    border-color: var(--deca-white);
+    color: var(--deca-blue);
+}
+
+nav .label {
+    position: absolute;
+    left: 90px;
+    top: 50%;
+    transform: trnslateY(-50%) translateX(-10px);
+    background-color: var(--deca-gold);
+    color: var(--deca-blue);
+    padding: 10px 20px;
+    border-radius: var(--radius-sm);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--font-heading);
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    z-index: 10;
+}
+
+nav .label::before {
+    content:"";
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 8px 8px 8px 0;
+    border-style: solid;
+    border-color: transparent var(--deca-gold) transparent transparent;
+}
+
+nav ul li a:hover .label {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) translateX(10px);
+}
+
+header {
+    flex-grow: 1;
+    padding: 40px;
+    background: var(--deca-white);
 }
 
 h2, h3 {
@@ -45,8 +162,3 @@ h2, h3 {
     color: var(--deca-blue);
 }
 
-nav {
-    img {
-        height: 10px
-    }
-}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz, wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --deca-blue: #002f6c;
+    --deca-gold:#c9a227;
+    --deca-white: #ffffff;
+    --deca-black: #0f172a;
+
+    --deca-light-gray: #f1f5f9;
+    --deca-gray: #64748b;
+    --deca-border: #e5e7eb;
+
+    --font-body: "Inter", "Segoe UI", Arial, sans-serif;
+    --font-heading: "montserrat", Arial, sans-serif;
+
+    --max-width: 1200px;
+    --radius-sm: 6px;
+    --radius-md: 10px;
+
+    --shadow-card: 0 6px 20px rgba(0,47, 108, 0.15);
+    --shadow-hover: 0 10px 30px rgba(0, 47, 108, 0.25);
+
+    --transition: 0.25s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--deca-light-gray);
+    color: var(--deca-black);
+}
+
+header {
+    background: var(--deca-blue);
+    color: var(--deca-white);
+}
+
+h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--deca-blue);
+}
+
+nav {
+    img {
+        height: 10px
+    }
+}

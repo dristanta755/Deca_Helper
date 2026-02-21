@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deca_Helper</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.png">
+    <script src="page-transition.js" defer></script>
 </head>
-<body>
+<body class="home-page">
     <nav class="sidebar">
         <div class="logo">
-           <a href="index.html"> <img src="logog.png" alt="Deca_Logo"> </a>
+            <a href="index.html"><img src="logog.png" alt="Deca_Logo"></a>
         </div>
         <ul class="nav-links">
             <li>
-                <a href="Vocab.html">
-                   <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <a href="vocab.html">
+                    <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
                         <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
                         <line x1="8" y1="7" x2="16" y2="7"></line>
@@ -27,18 +28,16 @@
             </li>
             <li>
                 <a href="performance.html">
-                <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    <path d="M8 15V7"></path>
-                    <path d="M8 7h3a2 2 0 0 1 0 4H8"></path>
-                    <line x1="14" y1="7" x2="14" y2="15"></line>
-                    </svg>
-                    </div>
-                <span class="label">Perfomance Indicators</span>
+                    <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        <path d="M8 15V7"></path>
+                        <path d="M8 7h3a2 2 0 0 1 0 4H8"></path>
+                        <line x1="14" y1="7" x2="14" y2="15"></line>
+                    </svg></div>
+                    <span class="label">Performance Indicators</span>
                 </a>
             </li>
-
             <li>
                 <a href="roleplay.html">
                     <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -47,73 +46,80 @@
                         <circle cx="12" cy="11" r="1" fill="currentColor"></circle>
                         <circle cx="16" cy="11" r="1" fill="currentColor"></circle>
                     </svg></div>
-                    <span class="label">roleplay Examples</span>
+                    <span class="label">Roleplay Examples</span>
                 </a>
             </li>
-
             <li>
                 <a href="tips.html">
-                   <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M9 18h6"></path>
                         <path d="M10 22h4"></path>
                         <path d="M15.09 14c.18-.9.52-1.73 1-2.48a6 6 0 0 0-7.18 0c.48.75.82 1.58 1 2.48"></path>
                         <line x1="12" y1="2" x2="12" y2="4"></line>
                         <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
                         <line x1="19.78" y1="4.22" x2="18.36" y2="5.64"></line>
-                    </svg> </div>
-                    <span class="label">Tips and tricks</span>
+                    </svg></div>
+                    <span class="label">Tips and Tricks</span>
                 </a>
             </li>
         </ul>
     </nav>
+
     <div class="page-content">
         <section id="top">
-            <h1>
-                Welcome to Deca Helper
-            </h1>
-
-            <p>Because memorizing isn’t enough. Practice is what wins.
-DECA Helper turns preparation into an experience helping you think, speak, and perform like a top competitor.</p>
-
+            <p class="eyebrow">DECA Prep Platform</p>
+            <h1>Welcome to Deca Helper</h1>
+            <p class="hero-copy">Because memorizing is not enough. Practice wins. Deca Helper turns your preparation into an experience that helps you think, speak, and perform like a top competitor.</p>
             <a href="#about" class="btn">Get Started</a>
+            <div class="hero-metrics" aria-label="Platform highlights">
+                <article class="metric">
+                    <h3>Roleplay Drills</h3>
+                    <p>Practice with realistic business scenarios.</p>
+                </article>
+                <article class="metric">
+                    <h3>PI Clarity</h3>
+                    <p>Break down indicators into easy action steps.</p>
+                </article>
+                <article class="metric">
+                    <h3>Competition Mindset</h3>
+                    <p>Build confidence before you walk in.</p>
+                </article>
+            </div>
         </section>
+
         <main>
             <section id="about">
+                <h2>Why Deca Helper</h2>
                 <div class="container about-cards">
-
                     <div class="card">
-                        <h3>Who is it for?</h3>
+                        <h3>Who Is It For?</h3>
                         <h4>Built by DECA students, for DECA students.</h4>
-                        <p>We understand the stress of roleplays and all the events. The confusion around PI's and penalty points. Also the pressure of competition, because we have been there. DECA Helper is designed to be the tool we wished we had.</p>
+                        <p>We understand the stress of roleplays, confusion around PIs and penalty points, and the pressure of competition. Deca Helper is the tool we wish we had.</p>
                     </div>
 
                     <div class="card">
                         <h3>Our Vision</h3>
-                        <p>To empower every DECA student with the confidence, skills, and resources they need to excel in competition and beyond regardless of background, school, or access to coaching.</p>
+                        <p>To empower every DECA student with the confidence, skills, and resources they need to excel in competition and beyond, regardless of background, school, or access to coaching.</p>
                     </div>
+
                     <div class="card">
                         <h3>Our Mission</h3>
-                        <p>Deca Helper is built to make DECA preparation, simple, accessible, and effective. Our mission is to help students practice smarter through structured roleplays, clear explainations of performance indicators, and real world business scenarios, so no student walks into competition unprepared.</p>
+                        <p>Deca Helper makes DECA preparation simple, accessible, and effective. We help students practice smarter through structured roleplays, clear explanations, and real-world business scenarios.</p>
                     </div>
-                    
                 </div>
-            </section>
-
-            <section id="Start_Practicing">
-
             </section>
 
             <footer class="Main-footer">
                 <div class="footer-container">
                     <div class="footer-section brand">
                         <h3 class="footer-logo">Deca Helper</h3>
-                        <p>Your all in one place for Deca Excellence</p>
+                        <p>Your all-in-one place for DECA excellence.</p>
                     </div>
 
                     <div class="footer-section links">
-                    <ul>
+                        <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="Vocab.html">Vocabulary</a></li>
+                            <li><a href="vocab.html">Vocabulary</a></li>
                             <li><a href="performance.html">Performance Indicators</a></li>
                             <li><a href="roleplay.html">Roleplay Examples</a></li>
                             <li><a href="tips.html">Tips and Tricks</a></li>
@@ -121,16 +127,14 @@ DECA Helper turns preparation into an experience helping you think, speak, and p
                     </div>
 
                     <div class="footer-bottom">
-                        <p>&copy; 2026 Deca Helper Inc, All rights reserved.</p>
+                        <p>&copy; 2026 Deca Helper Inc. All rights reserved.</p>
                     </div>
                 </div>
-            </footer
-    
+            </footer>
         </main>
     </div>
-
-
-
-    
 </body>
-</html> 
+</html>
+
+
+

@@ -61,7 +61,7 @@ No frameworks or heavy dependencies. Pure HTML, CSS, and JavaScript.
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/your-username/deca-helper.git
+git clone https://github.com/dristanta755/deca-helper.git
 
 MIT License
 

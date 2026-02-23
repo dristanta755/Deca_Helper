@@ -4,7 +4,8 @@ DECA Helper is a lightweight, fast, and organized study website designed to supp
 
 ---
 
-## Project Structure/
+## Project Structure
+/
 ├── index.html              # Homepage
 ├── vocab.html              # Vocabulary page
 ├── performance.html        # Performance Indicators page
